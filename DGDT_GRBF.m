@@ -69,7 +69,7 @@ eta=tao*eta;
     L_old=L;
     
     %E-step. Eastimate the correspondence   ,PsiS
-%     [P1,Pt1, PX, L, P]=cpd_P(X,T,newX,newT,PsiS,sigma2,outliers); %%  Source x Target
+%     [P1,Pt1, PX, L, P]=cpd_P_dualGuss(X,T,newX,newT,PsiS,sigma2,outliers); %%  Source x Target
 [P, P1, Pt1, PX, L]=compute_P(newX(:,1:2),newT(:,1:2),PsiS,sigma2,outliers,iter); %%  Source x Target
 %     [P1,Pt1, PX, L, P]=cpdTESP(X,T,newX,newT,sigma2,outliers);
 if D==3

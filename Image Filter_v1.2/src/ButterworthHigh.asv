@@ -1,0 +1,13 @@
+function I=ButterworthHigh(I,order,cutoff)
+ [x y]=size(I);
+ I = fftshift(fft2(I));
+ f=highpassfilter([x y],cutoff,order);
+ I=f.*I;
+
+ I=ifft2(ifftshift(I));
+ size(I)
+ max(max(I))
+ min(min(I))
+ I=norm
+%  I = uint8((real(I)));
+ end

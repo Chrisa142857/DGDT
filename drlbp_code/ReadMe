@@ -1,0 +1,13 @@
+Demo code for paper "Dominant Rotated Local Binary Patterns for Texture Classification", Rakesh Mehta & Karen Egiazarian, Pattern Recognition Letters. 
+
+Main files:
+
+ test_drlbp_outex.m: Matlab script to reproduce the results on Outex-10 dataset. The Outex-10 dataset can be downloaded from http://www.outex.oulu.fi/index.php?page=classification.
+                     Save the dataset in the same directory as the code and run the script. The same code can also be used for Outex-12 dataset by adding the appropriate dataset path.
+
+
+ rlbp.m :            The Rotated Local Binary Pattern operator function. 
+
+ get_dominant_idx.m: Function returns the dominant patterns indices.
+
+In case of any issues please contact Rakesh Mehta (rakesh.mehta@tut.fi). 
